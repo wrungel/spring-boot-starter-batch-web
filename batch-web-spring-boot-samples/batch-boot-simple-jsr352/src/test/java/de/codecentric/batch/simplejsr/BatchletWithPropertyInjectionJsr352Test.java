@@ -13,7 +13,7 @@ public class BatchletWithPropertyInjectionJsr352Test {
 		Properties params = new Properties();
 		params.setProperty("datakey", "xxx");
 		params.setProperty("datakey2", "xxx2");
-		JsrTestUtils.runJob("batchletJobSpringDI", params, 1000000);
+		JsrTestUtils.runJob("batchletWithPropertyInjectionJob", params, 1000000);
 	}
 
 }
