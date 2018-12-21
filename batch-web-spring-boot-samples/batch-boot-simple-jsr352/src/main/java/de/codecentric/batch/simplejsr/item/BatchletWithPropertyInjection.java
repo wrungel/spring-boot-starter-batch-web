@@ -1,6 +1,5 @@
 package de.codecentric.batch.simplejsr.item;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -20,7 +19,7 @@ public class BatchletWithPropertyInjection extends AbstractBatchlet {
     private String datakey2;
 
     @Override
-    public String process() throws JsonProcessingException {
+    public String process() {
         LOG.info("datakey: " + datakey);
         LOG.info("datakey2: " + datakey2);
 
