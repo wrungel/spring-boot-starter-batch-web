@@ -8,5 +8,6 @@
     <bean id="logItemProcessor" class="de.codecentric.batch.simplejsr.item.LogItemProcessor"/>
     <bean id="logItemWriter" class="de.codecentric.batch.simplejsr.item.LogItemWriter"/>
     <bean id="simplePartitionMapper" class="de.codecentric.batch.simplejsr.item.SimplePartitionMapper"/>
+    <bean id="batchletWithJobContextInjection" class="de.codecentric.batch.simplejsr.item.BatchletWithJobContextInjection"/>
 
 </beans>
