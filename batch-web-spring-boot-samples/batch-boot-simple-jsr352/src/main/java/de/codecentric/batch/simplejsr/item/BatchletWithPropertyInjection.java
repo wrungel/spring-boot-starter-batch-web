@@ -4,11 +4,11 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import javax.batch.api.AbstractBatchlet;
 import javax.batch.api.BatchProperty;
 import javax.inject.Inject;
 
-public class BatchletWithPropertyInjection implements javax.batch.api.Batchlet {
-
+public class BatchletWithPropertyInjection extends AbstractBatchlet {
     private static final Logger LOG = LoggerFactory.getLogger(BatchletWithPropertyInjection.class);
 
     @Inject
@@ -26,10 +26,4 @@ public class BatchletWithPropertyInjection implements javax.batch.api.Batchlet {
 
         return "OK";
     }
-
-    @Override
-    public void stop() {
-
-    }
-
 }
